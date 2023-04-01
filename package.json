@@ -4,9 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "tsc --build && vite build --emptyOutDir",
+    "build": "tsc --build && vite build --emptyOutDir --base=/date-sandbox/",
     "start": "vite",
-    "start:preview": "vite preview"
+    "start:preview": "vite preview",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -26,6 +27,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.0.1",
     "dotenv": "^16.0.3",
+    "gh-pages": "^5.0.0",
     "typescript": "^4.9.5",
     "vite": "^4.0.4",
     "vite-plugin-svgr": "^2.4.0",

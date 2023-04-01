@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 //styles
 import { MantineProvider } from '@mantine/core'
 import { theme } from 'theme'
@@ -12,7 +12,7 @@ import Diff from '@/components/pages/Diff/Diff'
 import Format from '@/components/pages/Format/Format'
 import LocalTime from '@/components/pages/LocalTime/LocalTime'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout />,
     children: [
