@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background: #212529;
+}
+
+#root {
+  flex-grow: 1;
+  height: 1px;
+  display: flex;
+  flex-direction: column;
+}

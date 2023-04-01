@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    // Strict Checks
+    "skipLibCheck": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "useUnknownInCatchVariables": true,
+    // Linter Checks
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false, // false - less strict
+    "noUnusedParameters": false, // false - less strict
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": true, // true - less strict
+    // Project
+    "allowJs": true,
+    "types": ["vite/client"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "include": ["src"]
+}
